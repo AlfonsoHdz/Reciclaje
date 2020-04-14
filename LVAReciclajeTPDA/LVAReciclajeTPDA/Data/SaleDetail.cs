@@ -15,5 +15,12 @@ namespace LVAReciclajeTPDA.Data
         public string FullNameBuyer { get; set; }
         public int BuyerPhone { get; set; }
         public char BuyerEmail { get; set; }
+
+        public Product Product { get; set; }
+        public Sale Sale { get; set;}
+
+
+
+
     }
 }

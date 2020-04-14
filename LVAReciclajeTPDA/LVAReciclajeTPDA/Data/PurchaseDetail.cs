@@ -20,5 +20,9 @@ namespace LVAReciclajeTPDA.Data
         public double Quantity { get; set; }
         public double Price { get; set; }
         public string Description { get; set; }
+       
+        public Sale Sale { get; set; }
+        public Product Product { get; set; }
+        
     }
 }

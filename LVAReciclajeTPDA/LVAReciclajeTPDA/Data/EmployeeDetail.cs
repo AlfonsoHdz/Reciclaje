@@ -20,5 +20,9 @@ namespace LVAReciclajeTPDA.Data
         public string MaritalStatus { get; set; }
         public string PlaceOfBirth { get; set; }
         public string HealthInsurance { get; set; }
+
+        public Product Product { get; set; }
+        public Employee Employee { get; set; }
+
     }
 }
