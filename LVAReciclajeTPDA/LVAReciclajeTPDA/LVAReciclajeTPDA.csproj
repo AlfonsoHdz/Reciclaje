@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\Client.cs" />
+    <Compile Include="Data\DataContext.cs" />
     <Compile Include="Data\Employee.cs" />
     <Compile Include="Data\EmployeeDetail.cs" />
     <Compile Include="Data\IEntity.cs" />
