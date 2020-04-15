@@ -18,7 +18,7 @@ namespace LVAReciclajeTPDA
         public DbSet<Sale> Sales { get; set; }
         public DbSet<SaleDetail> SaleDetails { get; set; }
 
-        public DataContext() : base("name=con")
+        public DataContext():base("name=con")
         {
 
         }
