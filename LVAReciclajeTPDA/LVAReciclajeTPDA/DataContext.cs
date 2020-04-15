@@ -9,7 +9,6 @@ namespace LVAReciclajeTPDA
     public class DataContext: DbContext
     {
         public DbSet<Employee> Employees { get; set; }
-        public DbSet<EmployeeDetail> EmployeeDetails { get; set; }
         public DbSet<Client> Client { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Provider> Providers { get; set; }

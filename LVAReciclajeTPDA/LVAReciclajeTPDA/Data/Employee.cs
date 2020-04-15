@@ -21,7 +21,7 @@ namespace LVAReciclajeTPDA.Data
         public string PlaceOfBirth { get; set; }
         public string HealthInsurance { get; set; }
 
-        public ICollection<EmployeeDetail> EmployeeDetails { get; set; }
+        
         public ICollection<Sale> Sales { get; set; }
 
     }
