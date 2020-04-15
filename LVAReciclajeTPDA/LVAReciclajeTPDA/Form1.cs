@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace LVAReciclajeTPDA
 {
-    public partial class Form1 : Form
+    public partial class frmEmpleado : MetroFramework.Forms.MetroForm
     {
-        public Form1()
+        public frmEmpleado()
         {
             InitializeComponent();
         }
+
+
+     
+
+      
     }
 }
