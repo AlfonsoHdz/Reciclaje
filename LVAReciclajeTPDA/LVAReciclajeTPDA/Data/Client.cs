@@ -9,9 +9,9 @@ namespace LVAReciclajeTPDA.Data
         public string Surnames { get; set; }
         public string Rfc { get; set; }
         public string Curp { get; set; }
-        public string Phone { get; set; }
+        public int Phone { get; set; }
         public string Address { get; set; }
-        public string PostalCode { get; set; }
+        public int PostalCode { get; set; }
         public string Contact { get; set; }
 
         public ICollection<Employee> Employees { get; set; }

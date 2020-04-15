@@ -26,7 +26,7 @@ namespace LVAReciclajeTPDA.Data
         public string Description { get; set; }
         public double SalePrice { get; set; }
         public double TotalCost { get; set; }
-        public Customer Customer { get; set; }
+        
 
         public ICollection<PurchaseDetail> PurchaseDetails { get; set; }
         public ICollection<Employee> Employees { get; set; }
