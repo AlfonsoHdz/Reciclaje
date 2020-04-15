@@ -14,6 +14,7 @@ namespace LVAReciclajeTPDA.Data
         public string PostalCode { get; set; }
         public string Contact { get; set; }
 
-        public ICollection<Purchase> Purchases { get; set; }
+        public ICollection<Employee> Employees { get; set; }
+        public ICollection<Sale> Sales { get; set; }
     }
 }
