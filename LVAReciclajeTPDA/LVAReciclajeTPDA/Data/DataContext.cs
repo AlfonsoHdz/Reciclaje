@@ -14,4 +14,8 @@
 
 
     }
+
+    internal class DbSet<T>
+    {
+    }
 }
