@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace LVAReciclajeTPDA
 {
-    public partial class frmEmpleado : MetroFramework.Forms.MetroForm
+    public partial class FrmEmpleado : MetroFramework.Forms.MetroForm
     {
-        public frmEmpleado()
+        public FrmEmpleado()
         {
             InitializeComponent();
         }
 
-        private void pnEmpleado_Paint(object sender, PaintEventArgs e)
+        private void FrmEmpleado_Load(object sender, EventArgs e)
         {
 
         }
