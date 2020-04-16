@@ -30,7 +30,10 @@ namespace LVAReciclajeTPDA
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblRegistroEmpleado = new MetroFramework.Controls.MetroLabel();
+            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lblRegistroEmpleado
@@ -39,21 +42,26 @@ namespace LVAReciclajeTPDA
             this.lblRegistroEmpleado.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.lblRegistroEmpleado.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.lblRegistroEmpleado.ForeColor = System.Drawing.Color.Maroon;
-            this.lblRegistroEmpleado.Location = new System.Drawing.Point(286, 40);
+            this.lblRegistroEmpleado.Location = new System.Drawing.Point(285, 18);
             this.lblRegistroEmpleado.Name = "lblRegistroEmpleado";
             this.lblRegistroEmpleado.Size = new System.Drawing.Size(201, 40);
             this.lblRegistroEmpleado.TabIndex = 0;
             this.lblRegistroEmpleado.Text = "Registro Empleado";
             // 
+            // employeeBindingSource
+            // 
+            this.employeeBindingSource.DataSource = typeof(LVAReciclajeTPDA.Data.Employee);
+            // 
             // frmEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(876, 364);
+            this.ClientSize = new System.Drawing.Size(552, 348);
             this.Controls.Add(this.lblRegistroEmpleado);
             this.Name = "frmEmpleado";
             this.Text = "Empleado";
             this.Load += new System.EventHandler(this.frmEmpleado_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -66,6 +74,7 @@ namespace LVAReciclajeTPDA
         #endregion
 
         private MetroFramework.Controls.MetroLabel lblRegistroEmpleado;
+        private System.Windows.Forms.BindingSource employeeBindingSource;
     }
 }
 
