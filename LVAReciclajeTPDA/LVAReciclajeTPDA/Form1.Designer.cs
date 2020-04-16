@@ -67,7 +67,6 @@ namespace LVAReciclajeTPDA
             this.lblGenero = new MetroFramework.Controls.MetroLabel();
             this.lblSeguroSocial = new MetroFramework.Controls.MetroLabel();
             this.rbnMasculino = new MetroFramework.Controls.MetroRadioButton();
-            this.txtCiudad = new MetroFramework.Controls.MetroTextBox();
             this.lblCiudad = new MetroFramework.Controls.MetroLabel();
             this.txtNumeroCalle = new MetroFramework.Controls.MetroTextBox();
             this.lblNumeroCalle = new MetroFramework.Controls.MetroLabel();
@@ -82,6 +81,10 @@ namespace LVAReciclajeTPDA
             this.rbnISSSTE = new MetroFramework.Controls.MetroRadioButton();
             this.rbnIMSS = new MetroFramework.Controls.MetroRadioButton();
             this.cbmLugarNacimiento = new MetroFramework.Controls.MetroComboBox();
+            this.btnGuardar = new MetroFramework.Controls.MetroButton();
+            this.btnVerificar = new MetroFramework.Controls.MetroButton();
+            this.btnSalir = new MetroFramework.Controls.MetroButton();
+            this.cbmCiudad = new MetroFramework.Controls.MetroComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource1)).BeginInit();
             this.pnEmpleado.SuspendLayout();
@@ -99,6 +102,7 @@ namespace LVAReciclajeTPDA
             // 
             // pnEmpleado
             // 
+            this.pnEmpleado.Controls.Add(this.cbmCiudad);
             this.pnEmpleado.Controls.Add(this.cbmLugarNacimiento);
             this.pnEmpleado.Controls.Add(this.rbnISSSTE);
             this.pnEmpleado.Controls.Add(this.rbnIMSS);
@@ -106,7 +110,6 @@ namespace LVAReciclajeTPDA
             this.pnEmpleado.Controls.Add(this.rbnDivorciado);
             this.pnEmpleado.Controls.Add(this.rbnCasado);
             this.pnEmpleado.Controls.Add(this.rbnFemenino);
-            this.pnEmpleado.Controls.Add(this.txtCiudad);
             this.pnEmpleado.Controls.Add(this.lblCiudad);
             this.pnEmpleado.Controls.Add(this.txtNumeroCalle);
             this.pnEmpleado.Controls.Add(this.lblNumeroCalle);
@@ -318,8 +321,8 @@ namespace LVAReciclajeTPDA
             this.txtId.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtId.CustomButton.UseSelectable = true;
             this.txtId.CustomButton.Visible = false;
-            this.txtId.Lines = new string[] {
-        "metroTextBox1"};
+            this.txtId.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource, "Id", true));
+            this.txtId.Lines = new string[0];
             this.txtId.Location = new System.Drawing.Point(145, 13);
             this.txtId.MaxLength = 32767;
             this.txtId.Name = "txtId";
@@ -331,7 +334,6 @@ namespace LVAReciclajeTPDA
             this.txtId.ShortcutsEnabled = true;
             this.txtId.Size = new System.Drawing.Size(129, 23);
             this.txtId.TabIndex = 3;
-            this.txtId.Text = "metroTextBox1";
             this.txtId.UseSelectable = true;
             this.txtId.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtId.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -350,8 +352,8 @@ namespace LVAReciclajeTPDA
             this.txtFullName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtFullName.CustomButton.UseSelectable = true;
             this.txtFullName.CustomButton.Visible = false;
-            this.txtFullName.Lines = new string[] {
-        "metroTextBox2"};
+            this.txtFullName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource, "FullName", true));
+            this.txtFullName.Lines = new string[0];
             this.txtFullName.Location = new System.Drawing.Point(145, 44);
             this.txtFullName.MaxLength = 32767;
             this.txtFullName.Name = "txtFullName";
@@ -363,7 +365,6 @@ namespace LVAReciclajeTPDA
             this.txtFullName.ShortcutsEnabled = true;
             this.txtFullName.Size = new System.Drawing.Size(129, 23);
             this.txtFullName.TabIndex = 5;
-            this.txtFullName.Text = "metroTextBox2";
             this.txtFullName.UseSelectable = true;
             this.txtFullName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtFullName.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -391,8 +392,8 @@ namespace LVAReciclajeTPDA
             this.txtEmail.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtEmail.CustomButton.UseSelectable = true;
             this.txtEmail.CustomButton.Visible = false;
-            this.txtEmail.Lines = new string[] {
-        "metroTextBox3"};
+            this.txtEmail.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource, "ContactEmail", true));
+            this.txtEmail.Lines = new string[0];
             this.txtEmail.Location = new System.Drawing.Point(145, 106);
             this.txtEmail.MaxLength = 32767;
             this.txtEmail.Name = "txtEmail";
@@ -404,7 +405,6 @@ namespace LVAReciclajeTPDA
             this.txtEmail.ShortcutsEnabled = true;
             this.txtEmail.Size = new System.Drawing.Size(129, 23);
             this.txtEmail.TabIndex = 9;
-            this.txtEmail.Text = "metroTextBox3";
             this.txtEmail.UseSelectable = true;
             this.txtEmail.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtEmail.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -432,8 +432,8 @@ namespace LVAReciclajeTPDA
             this.txtNumberPhone.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtNumberPhone.CustomButton.UseSelectable = true;
             this.txtNumberPhone.CustomButton.Visible = false;
-            this.txtNumberPhone.Lines = new string[] {
-        "metroTextBox4"};
+            this.txtNumberPhone.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource, "NumberPhone", true));
+            this.txtNumberPhone.Lines = new string[0];
             this.txtNumberPhone.Location = new System.Drawing.Point(145, 75);
             this.txtNumberPhone.MaxLength = 32767;
             this.txtNumberPhone.Name = "txtNumberPhone";
@@ -445,7 +445,6 @@ namespace LVAReciclajeTPDA
             this.txtNumberPhone.ShortcutsEnabled = true;
             this.txtNumberPhone.Size = new System.Drawing.Size(129, 23);
             this.txtNumberPhone.TabIndex = 7;
-            this.txtNumberPhone.Text = "metroTextBox4";
             this.txtNumberPhone.UseSelectable = true;
             this.txtNumberPhone.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtNumberPhone.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -498,44 +497,13 @@ namespace LVAReciclajeTPDA
             // rbnMasculino
             // 
             this.rbnMasculino.AutoSize = true;
+            this.rbnMasculino.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.employeeBindingSource, "Gender", true));
             this.rbnMasculino.Location = new System.Drawing.Point(361, 16);
             this.rbnMasculino.Name = "rbnMasculino";
             this.rbnMasculino.Size = new System.Drawing.Size(73, 15);
             this.rbnMasculino.TabIndex = 26;
             this.rbnMasculino.Text = "Maculino";
             this.rbnMasculino.UseSelectable = true;
-            // 
-            // txtCiudad
-            // 
-            // 
-            // 
-            // 
-            this.txtCiudad.CustomButton.Image = null;
-            this.txtCiudad.CustomButton.Location = new System.Drawing.Point(107, 1);
-            this.txtCiudad.CustomButton.Name = "";
-            this.txtCiudad.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtCiudad.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtCiudad.CustomButton.TabIndex = 1;
-            this.txtCiudad.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtCiudad.CustomButton.UseSelectable = true;
-            this.txtCiudad.CustomButton.Visible = false;
-            this.txtCiudad.Lines = new string[] {
-        "metroTextBox5"};
-            this.txtCiudad.Location = new System.Drawing.Point(145, 228);
-            this.txtCiudad.MaxLength = 32767;
-            this.txtCiudad.Name = "txtCiudad";
-            this.txtCiudad.PasswordChar = '\0';
-            this.txtCiudad.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtCiudad.SelectedText = "";
-            this.txtCiudad.SelectionLength = 0;
-            this.txtCiudad.SelectionStart = 0;
-            this.txtCiudad.ShortcutsEnabled = true;
-            this.txtCiudad.Size = new System.Drawing.Size(129, 23);
-            this.txtCiudad.TabIndex = 34;
-            this.txtCiudad.Text = "metroTextBox5";
-            this.txtCiudad.UseSelectable = true;
-            this.txtCiudad.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtCiudad.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // lblCiudad
             // 
@@ -560,8 +528,8 @@ namespace LVAReciclajeTPDA
             this.txtNumeroCalle.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtNumeroCalle.CustomButton.UseSelectable = true;
             this.txtNumeroCalle.CustomButton.Visible = false;
-            this.txtNumeroCalle.Lines = new string[] {
-        "metroTextBox6"};
+            this.txtNumeroCalle.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource, "StreetNumber", true));
+            this.txtNumeroCalle.Lines = new string[0];
             this.txtNumeroCalle.Location = new System.Drawing.Point(145, 197);
             this.txtNumeroCalle.MaxLength = 32767;
             this.txtNumeroCalle.Name = "txtNumeroCalle";
@@ -573,7 +541,6 @@ namespace LVAReciclajeTPDA
             this.txtNumeroCalle.ShortcutsEnabled = true;
             this.txtNumeroCalle.Size = new System.Drawing.Size(129, 23);
             this.txtNumeroCalle.TabIndex = 32;
-            this.txtNumeroCalle.Text = "metroTextBox6";
             this.txtNumeroCalle.UseSelectable = true;
             this.txtNumeroCalle.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtNumeroCalle.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -601,8 +568,8 @@ namespace LVAReciclajeTPDA
             this.txtCodigoPotal.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtCodigoPotal.CustomButton.UseSelectable = true;
             this.txtCodigoPotal.CustomButton.Visible = false;
-            this.txtCodigoPotal.Lines = new string[] {
-        "metroTextBox7"};
+            this.txtCodigoPotal.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource, "ZipCode", true));
+            this.txtCodigoPotal.Lines = new string[0];
             this.txtCodigoPotal.Location = new System.Drawing.Point(145, 166);
             this.txtCodigoPotal.MaxLength = 32767;
             this.txtCodigoPotal.Name = "txtCodigoPotal";
@@ -614,7 +581,6 @@ namespace LVAReciclajeTPDA
             this.txtCodigoPotal.ShortcutsEnabled = true;
             this.txtCodigoPotal.Size = new System.Drawing.Size(129, 23);
             this.txtCodigoPotal.TabIndex = 30;
-            this.txtCodigoPotal.Text = "metroTextBox7";
             this.txtCodigoPotal.UseSelectable = true;
             this.txtCodigoPotal.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtCodigoPotal.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -642,8 +608,8 @@ namespace LVAReciclajeTPDA
             this.txtAdress.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtAdress.CustomButton.UseSelectable = true;
             this.txtAdress.CustomButton.Visible = false;
-            this.txtAdress.Lines = new string[] {
-        "metroTextBox8"};
+            this.txtAdress.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource, "Address", true));
+            this.txtAdress.Lines = new string[0];
             this.txtAdress.Location = new System.Drawing.Point(145, 135);
             this.txtAdress.MaxLength = 32767;
             this.txtAdress.Name = "txtAdress";
@@ -655,7 +621,6 @@ namespace LVAReciclajeTPDA
             this.txtAdress.ShortcutsEnabled = true;
             this.txtAdress.Size = new System.Drawing.Size(129, 23);
             this.txtAdress.TabIndex = 28;
-            this.txtAdress.Text = "metroTextBox8";
             this.txtAdress.UseSelectable = true;
             this.txtAdress.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtAdress.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -672,6 +637,7 @@ namespace LVAReciclajeTPDA
             // rbnFemenino
             // 
             this.rbnFemenino.AutoSize = true;
+            this.rbnFemenino.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.employeeBindingSource, "Gender", true));
             this.rbnFemenino.Location = new System.Drawing.Point(440, 16);
             this.rbnFemenino.Name = "rbnFemenino";
             this.rbnFemenino.Size = new System.Drawing.Size(76, 15);
@@ -682,6 +648,7 @@ namespace LVAReciclajeTPDA
             // rbnDivorciado
             // 
             this.rbnDivorciado.AutoSize = true;
+            this.rbnDivorciado.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.employeeBindingSource, "MaritalStatus", true));
             this.rbnDivorciado.Location = new System.Drawing.Point(441, 48);
             this.rbnDivorciado.Name = "rbnDivorciado";
             this.rbnDivorciado.Size = new System.Drawing.Size(80, 15);
@@ -692,6 +659,7 @@ namespace LVAReciclajeTPDA
             // rbnCasado
             // 
             this.rbnCasado.AutoSize = true;
+            this.rbnCasado.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.employeeBindingSource, "MaritalStatus", true));
             this.rbnCasado.Location = new System.Drawing.Point(362, 47);
             this.rbnCasado.Name = "rbnCasado";
             this.rbnCasado.Size = new System.Drawing.Size(62, 15);
@@ -702,6 +670,7 @@ namespace LVAReciclajeTPDA
             // rbnSoltero
             // 
             this.rbnSoltero.AutoSize = true;
+            this.rbnSoltero.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.employeeBindingSource, "MaritalStatus", true));
             this.rbnSoltero.Location = new System.Drawing.Point(527, 48);
             this.rbnSoltero.Name = "rbnSoltero";
             this.rbnSoltero.Size = new System.Drawing.Size(60, 15);
@@ -712,6 +681,7 @@ namespace LVAReciclajeTPDA
             // rbnISSSTE
             // 
             this.rbnISSSTE.AutoSize = true;
+            this.rbnISSSTE.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.employeeBindingSource, "HealthInsurance", true));
             this.rbnISSSTE.Location = new System.Drawing.Point(454, 79);
             this.rbnISSSTE.Name = "rbnISSSTE";
             this.rbnISSSTE.Size = new System.Drawing.Size(56, 15);
@@ -722,6 +692,7 @@ namespace LVAReciclajeTPDA
             // rbnIMSS
             // 
             this.rbnIMSS.AutoSize = true;
+            this.rbnIMSS.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.employeeBindingSource, "HealthInsurance", true));
             this.rbnIMSS.Location = new System.Drawing.Point(375, 79);
             this.rbnIMSS.Name = "rbnIMSS";
             this.rbnIMSS.Size = new System.Drawing.Size(49, 15);
@@ -731,6 +702,7 @@ namespace LVAReciclajeTPDA
             // 
             // cbmLugarNacimiento
             // 
+            this.cbmLugarNacimiento.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.employeeBindingSource, "PlaceOfBirth", true));
             this.cbmLugarNacimiento.FormattingEnabled = true;
             this.cbmLugarNacimiento.ItemHeight = 23;
             this.cbmLugarNacimiento.Items.AddRange(new object[] {
@@ -757,11 +729,72 @@ namespace LVAReciclajeTPDA
             this.cbmLugarNacimiento.TabIndex = 41;
             this.cbmLugarNacimiento.UseSelectable = true;
             // 
+            // btnGuardar
+            // 
+            this.btnGuardar.BackColor = System.Drawing.Color.Silver;
+            this.btnGuardar.ForeColor = System.Drawing.Color.Black;
+            this.btnGuardar.Location = new System.Drawing.Point(346, 379);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(110, 38);
+            this.btnGuardar.TabIndex = 4;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseSelectable = true;
+            // 
+            // btnVerificar
+            // 
+            this.btnVerificar.Location = new System.Drawing.Point(475, 379);
+            this.btnVerificar.Name = "btnVerificar";
+            this.btnVerificar.Size = new System.Drawing.Size(110, 38);
+            this.btnVerificar.TabIndex = 5;
+            this.btnVerificar.Text = "Verificar";
+            this.btnVerificar.UseSelectable = true;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(604, 379);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(110, 38);
+            this.btnSalir.TabIndex = 6;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseSelectable = true;
+            // 
+            // cbmCiudad
+            // 
+            this.cbmCiudad.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.employeeBindingSource, "City", true));
+            this.cbmCiudad.FormattingEnabled = true;
+            this.cbmCiudad.ItemHeight = 23;
+            this.cbmCiudad.Items.AddRange(new object[] {
+            "Acatlán de Osorio",
+            "Amozoc",
+            "Atlixco",
+            "Ciudad Serdán",
+            "Cuautlancingo",
+            "Huauchinango",
+            "Izúcar de Matamoros",
+            "Puebla (Heroica Puebla)",
+            "San Andrés Cholula",
+            "San Martín Texmelucan de Labastida",
+            "San Pedro Cholula",
+            "Tecamachalco",
+            "Tehuacan",
+            "Tepeaca",
+            "Teziutlan",
+            "Xicotepec",
+            "Zacatlán"});
+            this.cbmCiudad.Location = new System.Drawing.Point(145, 226);
+            this.cbmCiudad.Name = "cbmCiudad";
+            this.cbmCiudad.Size = new System.Drawing.Size(163, 29);
+            this.cbmCiudad.TabIndex = 42;
+            this.cbmCiudad.UseSelectable = true;
+            // 
             // frmEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(853, 490);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.btnVerificar);
+            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.metroGrid1);
             this.Controls.Add(this.pnEmpleado);
             this.Name = "frmEmpleado";
@@ -792,7 +825,6 @@ namespace LVAReciclajeTPDA
         private MetroFramework.Controls.MetroRadioButton rbnDivorciado;
         private MetroFramework.Controls.MetroRadioButton rbnCasado;
         private MetroFramework.Controls.MetroRadioButton rbnFemenino;
-        private MetroFramework.Controls.MetroTextBox txtCiudad;
         private MetroFramework.Controls.MetroLabel lblCiudad;
         private MetroFramework.Controls.MetroTextBox txtNumeroCalle;
         private MetroFramework.Controls.MetroLabel lblNumeroCalle;
@@ -831,6 +863,10 @@ namespace LVAReciclajeTPDA
         private System.Windows.Forms.DataGridViewTextBoxColumn salesDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource employeeBindingSource2;
         private MetroFramework.Controls.MetroComboBox cbmLugarNacimiento;
+        private MetroFramework.Controls.MetroButton btnGuardar;
+        private MetroFramework.Controls.MetroButton btnVerificar;
+        private MetroFramework.Controls.MetroButton btnSalir;
+        private MetroFramework.Controls.MetroComboBox cbmCiudad;
     }
 }
 
