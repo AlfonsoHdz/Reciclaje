@@ -17,9 +17,9 @@ namespace LVAReciclajeTPDA
             InitializeComponent();
         }
 
+        private void pnEmpleado_Paint(object sender, PaintEventArgs e)
+        {
 
-     
-
-      
+        }
     }
 }
