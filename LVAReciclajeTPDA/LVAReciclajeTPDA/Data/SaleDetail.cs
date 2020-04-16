@@ -7,7 +7,6 @@ namespace LVAReciclajeTPDA.Data
     public class SaleDetail: IEntity
     {
         public int Id { get; set; }
-        public string SellerName { get; set; }
         public string FullNameSeller { get; set; }
         public int SellerPhone { get; set; }
         public char SellerEmail { get; set; }
