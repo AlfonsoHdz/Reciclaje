@@ -21,5 +21,10 @@ namespace LVAReciclajeTPDA
         {
 
         }
+
+        private void grdDatos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
