@@ -76,6 +76,12 @@
     <Compile Include="Data\PurchaseDetail.cs" />
     <Compile Include="Data\Sale.cs" />
     <Compile Include="Data\SaleDetail.cs" />
+    <Compile Include="FrmClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClient.Designer.cs">
+      <DependentUpon>FrmClient.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmClient.resx">
+      <DependentUpon>FrmClient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmEmpleado.resx">
       <DependentUpon>FrmEmpleado.cs</DependentUpon>
     </EmbeddedResource>
