@@ -129,5 +129,14 @@ namespace LVAReciclajeTPDA
             employeeBindingSource.ResetBindings(false);
             FrmEmpleado_Load(sender, e);
         }
+
+        private void grdDatos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Employee employee = employeeBindingSource.Current as Employee;
+            if (employee != null && employee.ImageUrl != null)
+                pctFoto.Image = Image.FromFile(employee.ImageUrl);
+            else
+                pctFoto.Image = null;
+        }
     }
 }
