@@ -1,6 +1,6 @@
 ﻿namespace LVAReciclajeTPDA
 {
-    partial class FrmEmpleado
+    partial class frmEmpleado
     {
         /// <summary>
         /// Required designer variable.
@@ -33,6 +33,21 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grdDatos = new MetroFramework.Controls.MetroGrid();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numberPhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contactEmailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contrasenaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.zipCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.streetNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.genderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maritalStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.placeOfBirthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.healthInsuranceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pnlDatos = new MetroFramework.Controls.MetroPanel();
             this.cbmCiudad = new MetroFramework.Controls.MetroComboBox();
             this.pctFoto = new System.Windows.Forms.PictureBox();
@@ -69,25 +84,10 @@
             this.btnBuscar = new MetroFramework.Controls.MetroButton();
             this.btnEliminar = new MetroFramework.Controls.MetroButton();
             this.btnSalir = new MetroFramework.Controls.MetroButton();
-            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numberPhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contactEmailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contrasenaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.zipCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.streetNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.genderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.maritalStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.placeOfBirthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.healthInsuranceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.salesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grdDatos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             this.pnlDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctFoto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // grdDatos
@@ -150,6 +150,95 @@
             this.grdDatos.Size = new System.Drawing.Size(211, 282);
             this.grdDatos.TabIndex = 4;
             this.grdDatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdDatos_CellContentClick);
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // fullNameDataGridViewTextBoxColumn
+            // 
+            this.fullNameDataGridViewTextBoxColumn.DataPropertyName = "FullName";
+            this.fullNameDataGridViewTextBoxColumn.HeaderText = "FullName";
+            this.fullNameDataGridViewTextBoxColumn.Name = "fullNameDataGridViewTextBoxColumn";
+            // 
+            // numberPhoneDataGridViewTextBoxColumn
+            // 
+            this.numberPhoneDataGridViewTextBoxColumn.DataPropertyName = "NumberPhone";
+            this.numberPhoneDataGridViewTextBoxColumn.HeaderText = "NumberPhone";
+            this.numberPhoneDataGridViewTextBoxColumn.Name = "numberPhoneDataGridViewTextBoxColumn";
+            // 
+            // contactEmailDataGridViewTextBoxColumn
+            // 
+            this.contactEmailDataGridViewTextBoxColumn.DataPropertyName = "ContactEmail";
+            this.contactEmailDataGridViewTextBoxColumn.HeaderText = "ContactEmail";
+            this.contactEmailDataGridViewTextBoxColumn.Name = "contactEmailDataGridViewTextBoxColumn";
+            // 
+            // contrasenaDataGridViewTextBoxColumn
+            // 
+            this.contrasenaDataGridViewTextBoxColumn.DataPropertyName = "Contrasena";
+            this.contrasenaDataGridViewTextBoxColumn.HeaderText = "Contrasena";
+            this.contrasenaDataGridViewTextBoxColumn.Name = "contrasenaDataGridViewTextBoxColumn";
+            // 
+            // addressDataGridViewTextBoxColumn
+            // 
+            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
+            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
+            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            // 
+            // zipCodeDataGridViewTextBoxColumn
+            // 
+            this.zipCodeDataGridViewTextBoxColumn.DataPropertyName = "ZipCode";
+            this.zipCodeDataGridViewTextBoxColumn.HeaderText = "ZipCode";
+            this.zipCodeDataGridViewTextBoxColumn.Name = "zipCodeDataGridViewTextBoxColumn";
+            // 
+            // streetNumberDataGridViewTextBoxColumn
+            // 
+            this.streetNumberDataGridViewTextBoxColumn.DataPropertyName = "StreetNumber";
+            this.streetNumberDataGridViewTextBoxColumn.HeaderText = "StreetNumber";
+            this.streetNumberDataGridViewTextBoxColumn.Name = "streetNumberDataGridViewTextBoxColumn";
+            // 
+            // cityDataGridViewTextBoxColumn
+            // 
+            this.cityDataGridViewTextBoxColumn.DataPropertyName = "City";
+            this.cityDataGridViewTextBoxColumn.HeaderText = "City";
+            this.cityDataGridViewTextBoxColumn.Name = "cityDataGridViewTextBoxColumn";
+            // 
+            // genderDataGridViewTextBoxColumn
+            // 
+            this.genderDataGridViewTextBoxColumn.DataPropertyName = "Gender";
+            this.genderDataGridViewTextBoxColumn.HeaderText = "Gender";
+            this.genderDataGridViewTextBoxColumn.Name = "genderDataGridViewTextBoxColumn";
+            // 
+            // maritalStatusDataGridViewTextBoxColumn
+            // 
+            this.maritalStatusDataGridViewTextBoxColumn.DataPropertyName = "MaritalStatus";
+            this.maritalStatusDataGridViewTextBoxColumn.HeaderText = "MaritalStatus";
+            this.maritalStatusDataGridViewTextBoxColumn.Name = "maritalStatusDataGridViewTextBoxColumn";
+            // 
+            // placeOfBirthDataGridViewTextBoxColumn
+            // 
+            this.placeOfBirthDataGridViewTextBoxColumn.DataPropertyName = "PlaceOfBirth";
+            this.placeOfBirthDataGridViewTextBoxColumn.HeaderText = "PlaceOfBirth";
+            this.placeOfBirthDataGridViewTextBoxColumn.Name = "placeOfBirthDataGridViewTextBoxColumn";
+            // 
+            // healthInsuranceDataGridViewTextBoxColumn
+            // 
+            this.healthInsuranceDataGridViewTextBoxColumn.DataPropertyName = "HealthInsurance";
+            this.healthInsuranceDataGridViewTextBoxColumn.HeaderText = "HealthInsurance";
+            this.healthInsuranceDataGridViewTextBoxColumn.Name = "healthInsuranceDataGridViewTextBoxColumn";
+            // 
+            // salesDataGridViewTextBoxColumn
+            // 
+            this.salesDataGridViewTextBoxColumn.DataPropertyName = "Sales";
+            this.salesDataGridViewTextBoxColumn.HeaderText = "Sales";
+            this.salesDataGridViewTextBoxColumn.Name = "salesDataGridViewTextBoxColumn";
+            // 
+            // employeeBindingSource
+            // 
+            this.employeeBindingSource.DataSource = typeof(LVAReciclajeTPDA.Data.Employee);
             // 
             // pnlDatos
             // 
@@ -739,96 +828,7 @@
             this.btnSalir.UseSelectable = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // employeeBindingSource
-            // 
-            this.employeeBindingSource.DataSource = typeof(LVAReciclajeTPDA.Data.Employee);
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // fullNameDataGridViewTextBoxColumn
-            // 
-            this.fullNameDataGridViewTextBoxColumn.DataPropertyName = "FullName";
-            this.fullNameDataGridViewTextBoxColumn.HeaderText = "FullName";
-            this.fullNameDataGridViewTextBoxColumn.Name = "fullNameDataGridViewTextBoxColumn";
-            // 
-            // numberPhoneDataGridViewTextBoxColumn
-            // 
-            this.numberPhoneDataGridViewTextBoxColumn.DataPropertyName = "NumberPhone";
-            this.numberPhoneDataGridViewTextBoxColumn.HeaderText = "NumberPhone";
-            this.numberPhoneDataGridViewTextBoxColumn.Name = "numberPhoneDataGridViewTextBoxColumn";
-            // 
-            // contactEmailDataGridViewTextBoxColumn
-            // 
-            this.contactEmailDataGridViewTextBoxColumn.DataPropertyName = "ContactEmail";
-            this.contactEmailDataGridViewTextBoxColumn.HeaderText = "ContactEmail";
-            this.contactEmailDataGridViewTextBoxColumn.Name = "contactEmailDataGridViewTextBoxColumn";
-            // 
-            // contrasenaDataGridViewTextBoxColumn
-            // 
-            this.contrasenaDataGridViewTextBoxColumn.DataPropertyName = "Contrasena";
-            this.contrasenaDataGridViewTextBoxColumn.HeaderText = "Contrasena";
-            this.contrasenaDataGridViewTextBoxColumn.Name = "contrasenaDataGridViewTextBoxColumn";
-            // 
-            // addressDataGridViewTextBoxColumn
-            // 
-            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
-            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
-            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
-            // 
-            // zipCodeDataGridViewTextBoxColumn
-            // 
-            this.zipCodeDataGridViewTextBoxColumn.DataPropertyName = "ZipCode";
-            this.zipCodeDataGridViewTextBoxColumn.HeaderText = "ZipCode";
-            this.zipCodeDataGridViewTextBoxColumn.Name = "zipCodeDataGridViewTextBoxColumn";
-            // 
-            // streetNumberDataGridViewTextBoxColumn
-            // 
-            this.streetNumberDataGridViewTextBoxColumn.DataPropertyName = "StreetNumber";
-            this.streetNumberDataGridViewTextBoxColumn.HeaderText = "StreetNumber";
-            this.streetNumberDataGridViewTextBoxColumn.Name = "streetNumberDataGridViewTextBoxColumn";
-            // 
-            // cityDataGridViewTextBoxColumn
-            // 
-            this.cityDataGridViewTextBoxColumn.DataPropertyName = "City";
-            this.cityDataGridViewTextBoxColumn.HeaderText = "City";
-            this.cityDataGridViewTextBoxColumn.Name = "cityDataGridViewTextBoxColumn";
-            // 
-            // genderDataGridViewTextBoxColumn
-            // 
-            this.genderDataGridViewTextBoxColumn.DataPropertyName = "Gender";
-            this.genderDataGridViewTextBoxColumn.HeaderText = "Gender";
-            this.genderDataGridViewTextBoxColumn.Name = "genderDataGridViewTextBoxColumn";
-            // 
-            // maritalStatusDataGridViewTextBoxColumn
-            // 
-            this.maritalStatusDataGridViewTextBoxColumn.DataPropertyName = "MaritalStatus";
-            this.maritalStatusDataGridViewTextBoxColumn.HeaderText = "MaritalStatus";
-            this.maritalStatusDataGridViewTextBoxColumn.Name = "maritalStatusDataGridViewTextBoxColumn";
-            // 
-            // placeOfBirthDataGridViewTextBoxColumn
-            // 
-            this.placeOfBirthDataGridViewTextBoxColumn.DataPropertyName = "PlaceOfBirth";
-            this.placeOfBirthDataGridViewTextBoxColumn.HeaderText = "PlaceOfBirth";
-            this.placeOfBirthDataGridViewTextBoxColumn.Name = "placeOfBirthDataGridViewTextBoxColumn";
-            // 
-            // healthInsuranceDataGridViewTextBoxColumn
-            // 
-            this.healthInsuranceDataGridViewTextBoxColumn.DataPropertyName = "HealthInsurance";
-            this.healthInsuranceDataGridViewTextBoxColumn.HeaderText = "HealthInsurance";
-            this.healthInsuranceDataGridViewTextBoxColumn.Name = "healthInsuranceDataGridViewTextBoxColumn";
-            // 
-            // salesDataGridViewTextBoxColumn
-            // 
-            this.salesDataGridViewTextBoxColumn.DataPropertyName = "Sales";
-            this.salesDataGridViewTextBoxColumn.HeaderText = "Sales";
-            this.salesDataGridViewTextBoxColumn.Name = "salesDataGridViewTextBoxColumn";
-            // 
-            // FrmEmpleado
+            // frmEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -843,14 +843,14 @@
             this.Controls.Add(this.grdDatos);
             this.Controls.Add(this.btnGuardar);
             this.ForeColor = System.Drawing.Color.SpringGreen;
-            this.Name = "FrmEmpleado";
+            this.Name = "frmEmpleado";
             this.Text = "Empleado";
             this.Load += new System.EventHandler(this.FrmEmpleado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdDatos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
             this.pnlDatos.ResumeLayout(false);
             this.pnlDatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctFoto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace LVAReciclajeTPDA
 {
-    public partial class FrmEmpleado : MetroFramework.Forms.MetroForm
+    public partial class frmEmpleado : MetroFramework.Forms.MetroForm
     {
-        public FrmEmpleado()
+        public frmEmpleado()
         {
             InitializeComponent();
         }
