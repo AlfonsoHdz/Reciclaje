@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LVAReciclajeTPDA.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,13 @@ namespace LVAReciclajeTPDA
 
         private void FrmClient_Load(object sender, EventArgs e)
         {
-
+            using (DataContext dataContext = new DataContext())
+            {
+                clientBindingSource.DataSource =
+                    dataContext.Client.ToList();
+            }
+            pnlDatos.Enabled = false;
+            Client cliente = clientBindingSource.Current as Client;
         }
     }
 }

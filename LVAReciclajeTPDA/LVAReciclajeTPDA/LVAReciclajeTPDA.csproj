@@ -88,6 +88,12 @@
     <Compile Include="frmEmpleado.Designer.cs">
       <DependentUpon>frmEmpleado.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProduct.Designer.cs">
+      <DependentUpon>FrmProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\202004150325155_AppReciclaje.cs" />
     <Compile Include="Migrations\202004150325155_AppReciclaje.designer.cs">
       <DependentUpon>202004150325155_AppReciclaje.cs</DependentUpon>
@@ -100,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmEmpleado.resx">
       <DependentUpon>frmEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProduct.resx">
+      <DependentUpon>FrmProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202004150325155_AppReciclaje.resx">
       <DependentUpon>202004150325155_AppReciclaje.cs</DependentUpon>
@@ -115,6 +124,7 @@
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\frmEmpleado.datasource" />
+    <None Include="Properties\DataSources\LVAReciclajeTPDA.Data.Client.datasource" />
     <None Include="Properties\DataSources\LVAReciclajeTPDA.Data.Employee.datasource" />
     <None Include="Properties\DataSources\LVAReciclajeTPDA.Data.Product.datasource" />
     <None Include="Properties\Settings.settings">
