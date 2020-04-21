@@ -55,7 +55,7 @@ namespace LVAReciclajeTPDA
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             pnlDatos.Enabled = true;
-            productBindingSource.Add(new Employee());
+            productBindingSource.Add(new Product());
             productBindingSource.MoveLast();
             txtName.Focus();
         }
