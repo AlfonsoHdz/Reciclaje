@@ -98,6 +98,10 @@
     <Compile Include="Migrations\202004150325155_AppReciclaje.designer.cs">
       <DependentUpon>202004150325155_AppReciclaje.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202004210110547_inicial.cs" />
+    <Compile Include="Migrations\202004210110547_inicial.designer.cs">
+      <DependentUpon>202004210110547_inicial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -112,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202004150325155_AppReciclaje.resx">
       <DependentUpon>202004150325155_AppReciclaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004210110547_inicial.resx">
+      <DependentUpon>202004210110547_inicial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

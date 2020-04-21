@@ -13,6 +13,7 @@ namespace LVAReciclajeTPDA.Data
         public string Address { get; set; }
         public int PostalCode { get; set; }
         public string Contact { get; set; }
+        public string ImageUrl { get; set; }
 
         public ICollection<Employee> Employees { get; set; }
         public ICollection<Sale> Sales { get; set; }
